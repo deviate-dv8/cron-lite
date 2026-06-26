@@ -15,7 +15,7 @@ import AutoSwagger from "adonis-autoswagger";
 import swagger from '#config/swagger'
 
 router.get('/', () => {
-  return { hello: 'world' }
+  return { message: 'Cron-Lite API v1.0.0 by dev-dv8' }
 })
 
 router

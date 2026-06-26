@@ -43,7 +43,12 @@ services:
       interval: 5s
       timeout: 3s
       retries: 5
-
+  
+  mailer:
+    image: maildev/maildev:latest
+    ports:
+      - '1080:1080'
+      - '1025:1025'
 volumes:
   postgres_data:
 
