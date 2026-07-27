@@ -24,3 +24,26 @@ export const loginValidator = vine.create({
   email: email(),
   password: vine.string(),
 })
+
+//
+// Shared rules for email verification and forgot password tokens
+//
+const verification_token = () => vine.string()
+
+export const forgotPasswordValidator = vine.create({
+  email: email()
+})
+
+export const verifyForgotPasswordTokenValidator = vine.create({
+  token:verification_token()
+})
+
+export const verifyEmailVerificationTokenValidator = vine.create({
+  token:verification_token()
+})
+
+export const resetPasswordValidator = vine.create({
+  token:verification_token(),
+  password: password(),
+  passwordConfirmation: password().sameAs('password'),
+})

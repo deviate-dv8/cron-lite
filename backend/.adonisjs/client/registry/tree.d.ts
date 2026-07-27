@@ -9,6 +9,9 @@ export interface ApiDefinition {
     accessTokens: {
       store: typeof routes['auth.access_tokens.store']
     }
+    accountManagements: {
+      verifyEmailVerificationToken: typeof routes['auth.account_managements.verify_email_verification_token']
+    }
   }
   profile: {
     profile: {

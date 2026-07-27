@@ -18,6 +18,12 @@ const routes = {
     tokens: [{"old":"/api/v1/auth/login","type":0,"val":"api","end":""},{"old":"/api/v1/auth/login","type":0,"val":"v1","end":""},{"old":"/api/v1/auth/login","type":0,"val":"auth","end":""},{"old":"/api/v1/auth/login","type":0,"val":"login","end":""}],
     types: placeholder as Registry['auth.access_tokens.store']['types'],
   },
+  'auth.account_managements.verify_email_verification_token': {
+    methods: ["GET","HEAD"],
+    pattern: '/api/v1/auth/verify_reset_token',
+    tokens: [{"old":"/api/v1/auth/verify_reset_token","type":0,"val":"api","end":""},{"old":"/api/v1/auth/verify_reset_token","type":0,"val":"v1","end":""},{"old":"/api/v1/auth/verify_reset_token","type":0,"val":"auth","end":""},{"old":"/api/v1/auth/verify_reset_token","type":0,"val":"verify_reset_token","end":""}],
+    types: placeholder as Registry['auth.account_managements.verify_email_verification_token']['types'],
+  },
   'profile.profile.show': {
     methods: ["GET","HEAD"],
     pattern: '/api/v1/account/profile',

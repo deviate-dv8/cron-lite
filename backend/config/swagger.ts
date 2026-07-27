@@ -6,15 +6,14 @@ import url from "node:url";
 export default {
   // path: __dirname + "/../", for AdonisJS v5
   path: path.dirname(url.fileURLToPath(import.meta.url)) + "/../", // for AdonisJS v6
-  title: "Foo", // use info instead
+  title: "foo", // use info instead
   version: "1.0.0", // use info instead
   description: "", // use info instead
-  tagIndex: 2,
-  productionEnv: "production", // optional
+  tagIndex: 3,
   info: {
-    title: "title",
+    title: "Cron-Lite",
     version: "1.0.0",
-    description: "",
+    description: "Cron-Lite API",
   },
   snakeCase: true,
 
