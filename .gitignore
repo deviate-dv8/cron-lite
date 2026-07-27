@@ -28,3 +28,6 @@ backend/.vscode
 backend/.DS_Store
 
 # Frontend - To be Added- To be Added
+
+# Local configs
+*.json
