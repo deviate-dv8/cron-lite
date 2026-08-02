@@ -67,4 +67,16 @@ export interface Registry {
       errorResponse: ExtractErrorResponse<Awaited<ReturnType<import('#controllers/auth/access_tokens_controller').default['destroy']>>>
     }
   }
+  'emails.test_email': {
+    methods: ["GET","HEAD"]
+    pattern: '/api/v1/emails/test'
+    types: {
+      body: {}
+      paramsTuple: []
+      params: {}
+      query: {}
+      response: ExtractResponse<Awaited<ReturnType<import('#controllers/emails_controller').default['testEmail']>>>
+      errorResponse: ExtractErrorResponse<Awaited<ReturnType<import('#controllers/emails_controller').default['testEmail']>>>
+    }
+  }
 }

@@ -21,4 +21,7 @@ export interface ApiDefinition {
       destroy: typeof routes['profile.access_tokens.destroy']
     }
   }
+  emails: {
+    testEmail: typeof routes['emails.test_email']
+  }
 }

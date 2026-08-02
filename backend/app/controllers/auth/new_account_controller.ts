@@ -6,11 +6,6 @@ import crypto from 'node:crypto'
 import { DateTime } from 'luxon'
 
 export default class NewAccountController {
-  /**
-  * @store
-  * @description Creates User
-  * @requestBody <signupValidator>
-  */
   async store({ request, serialize }: HttpContext) {
     const { fullName, email, password } = await request.validateUsing(signupValidator)
 
